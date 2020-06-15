@@ -86,7 +86,6 @@ setB.add(2);
 setB.add(3);
 setB.add(1);
 setB.add(1);
-setB.remove(1);
 console.log(setA.values())
 console.log(setB.values())
 
