@@ -131,46 +131,46 @@ class BinarySearchTree{
 		return false;
 	}
 	///////////////
-	display(){
-		const node=this.root;
-		if(node===null){
-			console.log("This tree is empty");
-		}
-		else{
-			// var counter=0;
-			const displayTree=function(node){
-					if(node.left===null && node.right===null){
-			// 			counter++;
-			// console.log('\t'.repeat(counter)+String(node.data)+'\t'.repeat(counter));
-			console.log(node.data);
+	// display(){
+	// 	const node=this.root;
+	// 	if(node===null){
+	// 		console.log("This tree is empty");
+	// 	}
+	// 	else{
+	// 		// var counter=0;
+	// 		const displayTree=function(node){
+	// 				if(node.left===null && node.right===null){
+	// 		// 			counter++;
+	// 		// console.log('\t'.repeat(counter)+String(node.data)+'\t'.repeat(counter));
+	// 		console.log(node.data);
 			
-					}
-					else{
-	// 					counter++;
-	// console.log('\t'.repeat(counter)+String(node.data)+'\t'.repeat(counter));
-			console.log(node.data);
+	// 				}
+	// 				else{
+	// // 					counter++;
+	// // console.log('\t'.repeat(counter)+String(node.data)+'\t'.repeat(counter));
+	// 		console.log(node.data);
 
-						 if(node.left===null){
-			return displayTree(node.right);
+	// 					 if(node.left===null){
+	// 		return displayTree(node.right);
 
-						 }
-						if(node.right===null){
-			return displayTree(node.left);
-						}
-						}
-			};
-			return displayTree(node);
-		}
-	}
+	// 					 }
+	// 					if(node.right===null){
+	// 		return displayTree(node.left);
+	// 					}
+	// 					}
+	// 		};
+	// 		return displayTree(node);
+	// 	}
+	// }
 	///////////////
 
 }
 const bst= new BinarySearchTree();
-bst.display()
+// bst.display()
 
 for(var i=1; i<11;i++){
 bst.add(i);
 }
 bst.remove(1)
 // console.log(bst.findMin());
-bst.display()
+// bst.display()
